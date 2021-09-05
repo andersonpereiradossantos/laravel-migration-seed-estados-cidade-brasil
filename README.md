@@ -35,7 +35,7 @@ php artisan migrate --seed
 $estado = Estado::with('Cidade')->get();
 
 // Obter todos as cidades da Bahia (codigo_uf = 29)
-$cidade_bahia = Estado::with('Cidade')->where('codigo_uf', 29)->get();
+$cidades_bahia = Estado::with('Cidade')->where('codigo_uf', 29)->get();
 ```
 # Autor
 Anderson Pereira dos Santos
