@@ -39,4 +39,7 @@ $cidades_bahia = Estado::with('Cidade')->where('codigo_uf', 29)->get();
 ```
 # Autor
 Anderson Pereira dos Santos
-https://www.linkedin.com/in/andersonpereirasantos
+
+[Linkedin](https://www.linkedin.com/in/andersonpereirasantos)
+
+[Github](https://github.com/andersonpereiradossantos)
