@@ -4,20 +4,19 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEstado extends Migration
+return new class extends Migration
 {
     /**
      * Run the migrations.
      *
      * @return void
      */
-    public function up()
+    public function up() : void
     {
-        Schema::create('estado', function (Blueprint $table) {
-            $table->integer('codigo_uf');
+        Schema::create('estados', function (Blueprint $table) {
+            $table->id();
             $table->char('uf', 2);
-            $table->string('nome');
-            $table->primary('codigo_uf');
+            $table->string('nome',191);
         });
     }
 
@@ -26,8 +25,8 @@ class CreateEstado extends Migration
      *
      * @return void
      */
-    public function down()
+    public function down(): void
     {
-        Schema::dropIfExists('estado');
+        Schema::dropIfExists('estados');
     }
-}
+};
